@@ -16,8 +16,7 @@
 		<h1 class="display-4">CRM - Customer Manager</h1>
 	</div>
 	<h3 class="form-title">Add customer</h3>
-	<form class="form-add">
-		<form:form action="save-customer" modelAttribute="customer"
+		<form:form class="form-add" action="save-customer" modelAttribute="customer"
 			method="POST">
 			<form:hidden path="id" />
 			<div class="form-group row">
@@ -40,7 +39,6 @@
 			</div>
 			<button type="submit" class="btn btn-success">Submit</button>
 		</form:form>
-	</form>
 	<p class="form-back">
 		<a href="${pageContext.request.contextPath}/customer/list"> Back
 			to the customer list </a>
